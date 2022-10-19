@@ -50,10 +50,11 @@
     color: rgb(249, 13, 13);
     transition: 0,5s;
  }
-
-.image {
-  text-align: right;
-  /* border:1px solid red; */
+.image{
+   text-align: right;
+}
+.image img {
+   width: 250px;
   padding-right: 8%;
     padding-left: 8%;
     margin-top: 50px;
