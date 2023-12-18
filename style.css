@@ -280,6 +280,7 @@ h3 {
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   text-align: center;
 }
 
 .contact-text h2 {
@@ -287,39 +288,82 @@ h3 {
    font-size: 65px;
    text-transform: capitalize;
    margin-bottom: 20px;
-   text-align: center;
 }
 
-.contact.box {
-   color: white;
+/* Tambahkan gaya untuk ikon */
+.contact i {
+   font-size: 20px;
+   margin-right: 5px;
+   border-radius: 50%; /* Menjadikan ikon bulat */
+   padding: 8px; /* Memberikan jarak agar ikon tetap terlihat bulat */
+   background-color: red; /* Warna latar belakang untuk ikon */
+   color: white; /* Warna ikon */
+ }
+
+/* Atur gaya untuk setiap kontak */
+.contact-info {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
 }
-.contact.box::after {
-   content: '';
-   display: block;
-   clear: both;
+
+.contact-box {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
 .contact {
-   width: 25%;
-   padding: 50px;
+   width: 250px;
+   padding: 20px;
    box-sizing: border-box;
    text-align: center;
-   float: left;
+   margin: 10px;
+   border-radius: 10px;
+   background-color: #191919;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .contact h4 {
    color: red;
-   padding-bottom: 10px;
+   font-size: 18px;
+   margin-bottom: 10px;
 }
 
 .contact p {
-font-size: 18px;
-color: white;
-} 
+   font-size: 16px;
+   color: #777;
+   margin-bottom: 20px;
+}
+
+.contact a {
+   color: white;
+   text-decoration: none;
+   padding: 8px 20px;
+   border: 2px solid red;
+   border-radius: 20px;
+   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+   background-color: red;
+   color: white;
+}
+
+
+
 footer {
    position: relative;
    width: 100%;
-   height: 400px;
+   height: 100px;
    color: white;
    background-color: #1d1a1a;
    display: flex;
@@ -328,20 +372,55 @@ footer {
    justify-content: center;
 }
 
+footer p {
+   font-size: 14px;
+}
+
+footer a {
+   color: red;
+   text-decoration: none;
+   margin: 0 5px;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
 .sb {
    width: 100%;
-   padding: 100px 0;
+   padding: 80px 0;
    background-color: #090909;
    display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   text-align: center;
+}
+
+.sb h3 {
+   font-size: 30px;
+   color: white;
+   margin-bottom: 20px;
 }
 
 .sb p {
-   font-size: 22px;
+   font-size: 16px;
    color: #fcfcfc;
+   max-width: 90%;
+   margin: 0 auto;
 }
+
+.sb p a {
+   color: red;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.sb p a:hover {
+   text-decoration: underline;
+}
+
+
 
 @media only screen and (max-width: 600px) {
    * {
